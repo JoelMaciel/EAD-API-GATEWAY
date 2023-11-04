@@ -7,7 +7,18 @@ spring:
    cloud:
      gateway:
        routes:
-         - id: authuser
-           uri: http://localhost:8087/
+         - id: authuser-service
+           uri: lb://EAD-AUTHUSER-SERVICE
            predicates:
              - Path=/ead-authuser/**
+         - id: course-service
+           uri: lb://EAD-COURSE-SERVICE
+           predicates:
+             - Path=/ead-course/**
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: 'http://localhost:8761/eureka'
+  instance:
+    hostname: localhost
