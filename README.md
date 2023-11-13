@@ -22,6 +22,13 @@ This project is an API Gateway microservice, an essential part of a microservice
 - **Spring Security, JWT**: For token-based authentication and authorization.
 
 
+## Request Images
+
+
+#### Microservice registered with Eureka Discovery
+
+![Captura de tela de 2023-11-12 20-41-16](https://github.com/JoelMaciel/EAD-COURSE/assets/77079093/a2dd17f6-f001-4350-9698-779858d7b7c9)
+
 ## Getting Started
 
 ### Prerequisites
